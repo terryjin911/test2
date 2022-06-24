@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta property="og:title" content="테리-프로필 링크">
+    <meta property="og:description" content="처음 만들어본 프로필 링크 요로시쿠~">
+    <meta property="og:image" content="https://www.kovo.co.kr/images/emblem/emblem_kgc.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로필 링크</title>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        * {
+            font-family: "Pretendard",serif;
+        }
+
+        body {
+            background-color: #44398A;
+        }
+        .profile {
+            width: 100px;
+            height: 100px;
+            
+            border-radius: 100%;
+            border: 2px solid white;
+
+            background-image: url('https://www.kovo.co.kr/images/emblem/emblem_kgc.png');
+            background-position: center;
+            background-size: cover;
+        }
+
+        .lay1 {
+            visibility: hidden;
+            color: red;
+            
+            position: absolute;
+            border: 1px solid black;
+
+            left: 200px;
+            top: 100px;
+            background-color: lightyellow;
+            z-index: 1;
+
+        }
+        .wrap {
+            width: 300px;
+            margin: 110px auto 500px auto;
+
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .main {
+            color: white;
+            font-size: 20px;
+
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        .sub {
+            color: white;
+            font-size: 14px;
+
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+
+        .box {
+            background-color: cadetblue;
+        }
+
+        .wrap > a {
+            width: 300px;
+            height: 50px;
+
+            background-color: white;
+            border-radius: 8px;
+
+            margin-bottom: 10px;
+            
+            text-decoration: none;
+            color: #44398A;
+            font-size: 14px;
+            font-weight: bold;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            box-shadow: 3px 3px 5px 0px black;
+        }
+        
+        .wrap > a:hover {
+            background-color: #f2f2f2;
+            font-size: 13px;
+        }
+    </style>
+    <script>
+        function go_notion(){
+            alert('"프로필링크 페이지만들기"노션페이지로 이동합니다아아아')
+            window.location.href = "https://teamsparta.notion.site/l-bb9d655f82184596bc3fdca9524b7443"
+        }
+    </script>
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="profile" onclick="go_notion()">
+            <div class="lay1" onmouseup="visible">믿어주세요 저는 그냥 앰블럼입니다</div>
+        </div>
+        
+        <h1 class="main">Hi there</h1>
+        <p class="sub">배구좋아하니..?</p>
+        <a target="_blank" href="https://www.kgcsports.com/volleyball/main/main.php">대전KGC인삼공사배구단 메인</a>
+        <a target="_blank" href="https://www.kgcsports.com/volleyball/community/free_list.php">🏐자유게시판🏐</a>
+        <a target="_blank" href="https://sports.news.naver.com/volleyball/news/index?isphoto=N">배구 스포츠기사</a>
+        <a target="_blank" href="https://m.search.daum.net/search?q=%EC%84%9C%EC%9A%B8%20%EB%82%A0%EC%94%A8&w=tot&nil_mtopsearch=reckwd&DA=BJE">서울 날씨</a>
+    </div>
+</body>
+</html>
